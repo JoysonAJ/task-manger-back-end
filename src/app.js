@@ -23,7 +23,7 @@ import taskRoutes from "./routes/task.routes.js";
 
 
 app.use("/app/users",userRoutes)
-app.use("/app/task",/api/tasks)
+app.use("/app/task",taskRoutes)
 
 
 
