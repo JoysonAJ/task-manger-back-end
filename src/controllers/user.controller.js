@@ -86,3 +86,15 @@ export const logout = async (req, res) => {
     message: "Logged out successfully",
   });
 };
+
+/**
+ * Get current logged-in user
+ * @route GET /api/users/me
+ * @access Private
+ */
+export const getMe = async (req, res) => {
+  res.status(200).json({
+    user: req.user,
+  });
+};
+
