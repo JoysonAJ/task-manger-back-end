@@ -22,8 +22,8 @@ import taskRoutes from "./routes/task.routes.js";
 
 
 
-app.use("/app/users",userRoutes)
-app.use("/app/task",taskRoutes)
+app.use("/api/users",userRoutes)
+app.use("/api/task",taskRoutes)
 
 
 
