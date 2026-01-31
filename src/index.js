@@ -20,7 +20,7 @@ const startServer = async () => {
       await connectDB();
   
       // Start the Express server and listen on the specified port
-      app.listen(process.env.PORT || 8000, () => {
+      app.listen(process.env.PORT || 8001, () => {
         // Log a message indicating that the server is running and the port it's using
         console.log(` Server is running at port : ${process.env.PORT}`);
       });
