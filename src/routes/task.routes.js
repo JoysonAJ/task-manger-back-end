@@ -13,8 +13,8 @@ import {
 
  router.use(protect);
 
-router.post("/", createTask);
 router.get("/", getAllTasks);
+router.post("/", createTask);
 router.get("/pending", getPendingTasks);
 router.get("/completed", getCompletedTasks);
 router.patch("/:id", toggleTaskStatus);
