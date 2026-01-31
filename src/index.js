@@ -22,7 +22,7 @@ const startServer = async () => {
       // Start the Express server and listen on the specified port
       app.listen(process.env.PORT || 8000, () => {
         // Log a message indicating that the server is running and the port it's using
-        console.log(`⚙️ Server is running at port : ${process.env.PORT}`);
+        console.log(` Server is running at port : ${process.env.PORT}`);
       });
     } catch (err) {
       // Log an error message if the MongoDB connection fails
