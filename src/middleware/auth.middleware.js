@@ -22,7 +22,7 @@ export const protect = async (req, res, next) => {
       return res.status(401).json({ message: "User no longer exists" });
     }
 
-    req.user = user; // attach authenticated user to request
+    req.user = user; 
     next();
     } catch (error) {
         return res.status(401).json({ message: "Not authorized, invalid token" });
